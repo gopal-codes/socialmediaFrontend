@@ -24,7 +24,7 @@ const Messenger = () => {
     // socket useEffect.
     useEffect(()=>{
         // initializing socket.io running on port 8900.
-        socket.current=io("https://socialmedia_mernapp.onrender.com");
+        socket.current=io("https://socialmedia-mernapp.onrender.com");
         // receiving message from server througn event.
         socket?.current.on("getMessage",(data)=>{
             setArrivedMessage({

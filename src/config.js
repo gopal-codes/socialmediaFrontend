@@ -1,5 +1,5 @@
 import axios from "axios"
 
 export const axiosInstance =axios.create({
-    baseURL : "https://socialmedia_mernapp.onrender.com/api"
+    baseURL : "https://socialmedia-mernapp.onrender.com/api"
 })

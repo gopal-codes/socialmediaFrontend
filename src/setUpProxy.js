@@ -8,7 +8,7 @@ module.exports = function(app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: "https://socialmedia_mernapp.onrender.com/api",
+      target: "https://socialmedia-mernapp.onrender.com/api",
       changeOrigin: true,
     })
   );
