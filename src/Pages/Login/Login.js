@@ -19,7 +19,7 @@ const Login = () => {
         dispatch({type:"LOGIN_START"});
         
         try{
-            const res = await axiosInstance.post("/auth/login",
+            const res = await axiosInstance.post("https://socialmedia_mernapp.onrender.com/api/auth/login",
             {email:email.current.value ,password:password.current.value});
             console.log(res.data.message)
             dispatch({type:"LOGIN_SUCCESS",payload:res.data});
